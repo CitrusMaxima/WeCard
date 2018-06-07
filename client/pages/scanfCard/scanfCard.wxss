@@ -1,0 +1,195 @@
+.bg{
+  height: 100vh;
+  width:100%;
+  margin-left: 2.5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.takePhoto{
+  height: 29vh;
+  width:95%;
+  padding-top: 15vh;
+  border-bottom: 1px solid lightgray;
+}
+
+.takePhotoBtn{
+  font-size: 15px;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+button::after{border:0}
+
+.selectPhoto{
+  height:24vh;
+  width:95%;
+  padding-top: 20vh;
+}
+
+/*===============================================
+  
+  选择名片区块
+
+ ===============================================*/
+
+.obtain-img-container {
+  border-radius: 20rpx;
+  width: 620rpx;
+  margin-top: 40rpx;
+  height: auto;
+  /* width: 100%; */
+  /* background: #ffffff80; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  transition: all 800ms ease;
+  box-sizing: border-box;
+}
+
+.obtain-img-button {
+  width: 160rpx;
+  height:160rpx;
+  background: #63B8FF;
+  border-radius: 110rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 220rpx;
+}
+
+.obtain-img-button-text {
+  width: auto;
+  font-size: 34rpx;
+  color: #fff;
+  margin-top:61rpx; 
+}
+
+/*===============================================
+  
+  名片照片
+
+ ===============================================*/
+
+.img-container {
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/*===============================================
+  
+  名片信息
+
+ ===============================================*/
+
+.card-number-container {
+  position: relative;
+  color: white;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+  width: 620rpx;
+  height: 320rpx;
+  background: #ef6356;
+  /* box-shadow: 8rpx 10rpx 10rpx #666; */
+}
+
+.card-name-text {
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  display: block;
+  font-size: 35rpx;
+}
+
+.card-type-text {
+  display: inline-block;
+  padding: 3rpx 6rpx 3rpx 6rpx;
+  height: 50rpx;
+  border-radius: 15rpx;
+  border: 1px solid #6cc;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  color: #ccf;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  box-sizing: content-box;
+}
+
+.card-yl-icon {
+  position: absolute;
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+  right: 0;
+  bottom: 0;
+  margin-right: 40rpx;
+  margin-bottom: 80rpx;
+}
+
+.card-number-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 20rpx;
+  margin-bottom: 30rpx;
+  text-align: right;
+  display: block;
+  font-size: 48rpx;
+}
+
+/*===============================================
+  
+  添加按钮
+
+ ===============================================*/
+
+.copy-container {
+  width: auto;
+  margin-top: 40rpx;
+}
+
+.copy-button {
+  border-radius: 20rpx;
+  width: 620rpx;
+  height: 80rpx;
+  background: #63B8FF;
+  text-align: center;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+
+.copy-button-icon {
+  display: inline-block;
+  margin-right: 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.copy-button-txt {
+  display: inline-block;
+  font-size: 35rpx;
+  color: white;
+}
+
+.copy-button-hover {
+  box-shadow: 0rpx 0rpx;
+  background: #08b;
+}

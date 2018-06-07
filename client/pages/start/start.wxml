@@ -1,0 +1,6 @@
+<view class="bg">
+  <image style="height:240rpx;width:240rpx;margin-left:255rpx;margin-top:200rpx" src="https://s31.postimg.cc/of8li6tq3/card_start.png"></image>
+  <text class="text_start">快来创建你的专属名片吧！</text>
+  <view bindtap='toaddInfo'>
+  <button class="btn_start">创建名片</button></view>
+</view>

@@ -1,0 +1,24 @@
+<view class="bg">
+  <view class="navi">
+    <button class="btn">
+      <image class="img" src="{{logoUrl}}" mode="aspecFill"></image>
+    </button>
+  </view>
+  <form bindsubmit="formSubmit">
+  <view class="space">
+    <view class="info_item"><image style="height:17px;width:17px;margin-right:20rpx;margin-top:10rpx" src="https://s31.postimg.cc/zazzd649j/name_info.png"></image>姓名<input class="text_item" value='{{person.name}}' name="name"></input></view>
+    <view class="info_item"><image style="height:17px;width:17px;margin-right:20rpx;margin-top:10rpx" src="https://s31.postimg.cc/xj70i9d6v/company_info.png"></image>公司<input class="text_item" value='{{person.org}}' name="org"></input></view>
+    <view class="info_item"><image style="height:17px;width:17px;margin-right:20rpx;margin-top:10rpx" src="https://s31.postimg.cc/6y4hmpxyv/position_info.png"></image>职位<input class="text_item" value='{{person.title}}' name="title"></input></view>
+    <view class="info_item"><image style="height:17px;width:17px;margin-right:20rpx;margin-top:10rpx" src="https://s31.postimg.cc/6ld3gjnev/phone_info.png"></image>手机<input class="text_item" value='{{person.mobile}}' name="mobile"></input></view>
+    <view class="info_item"><image style="height:17px;width:17px;margin-right:20rpx;margin-top:10rpx" src="https://s31.postimg.cc/gio49m2qf/fixed_phone_info.png"></image>座机<input class="text_item" value='{{person.tel}}' name="tel"></input></view>
+    <view class="info_item"><image style="height:17px;width:17px;margin-right:20rpx;margin-top:10rpx" src="https://s31.postimg.cc/pqgcqamnb/mailbox_info.png"></image>邮箱<input class="text_item" value='{{person.email}}' name="email"></input></view>
+    <view class="info_item"><image style="height:17px;width:17px;margin-right:20rpx;margin-top:10rpx" src="https://s31.postimg.cc/bk0lv1omv/address_info.png"></image>地址<input class="text_item" value='{{person.adr}}' name="adr"></input></view>
+    <view class="info_item"><image style="height:17px;width:17px;margin-right:20rpx;margin-top:10rpx" src="https://s7.postimg.cc/tvcwt31u3/own_Blog.png"></image>主页<input class="text_item" value='{{person.url}}' name="url"></input></view>
+  </view>
+  <view class="space">
+    <button class="btn_save"  formType="submit">保存</button>
+  </view>
+  </form>
+</view>
+
+<canvas canvas-id='canvas' style='margin: -999px; '></canvas>

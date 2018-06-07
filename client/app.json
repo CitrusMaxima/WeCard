@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/addInfo/addInfo",
+    "pages/collectCard/collectCard",
+    "pages/index/index",
+    "pages/scanfCard/scanfCard",
+    "pages/aboutMe/aboutMe",
+    "pages/shareCard/shareCard",
+    "pages/logs/logs",
+    "pages/myCard/myCard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ShowMeCard",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/pages/image/firstpage1.png",
+        "iconPath": "/pages/image/firstpage.png",
+        "pagePath": "pages/start/start",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/pages/image/scanf1.png",
+        "iconPath": "/pages/image/scanf.png",
+        "pagePath": "pages/scanfCard/scanfCard",
+        "text": "扫描"
+      },
+      {
+        "selectedIconPath": "/pages/image/collect1.png",
+        "iconPath": "/pages/image/collect.png",
+        "pagePath": "pages/collectCard/collectCard",
+        "text": "收藏"
+      },
+      {
+        "selectedIconPath": "/pages/image/myself1.png",
+        "iconPath": "/pages/image/myself.png",
+        "pagePath": "pages/aboutMe/aboutMe",
+        "text": "我的"
+      }
+    ]
+  }
+}

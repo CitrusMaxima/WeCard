@@ -1,0 +1,44 @@
+<!--数据为空时aboutMe的页面-->
+<view wx:if="{{cardList.length==0}}">
+  <image class='add_card_icon' src="https://s22.postimg.cc/o81o7cg0x/add_card_icon.png"></image>
+
+<view class="no_card">
+  你还没有名片哟，快去创建一个吧！
+</view>
+<view bindtap='toaddInfo'>
+<button class="add_card_btn"><image class='add_card_img' src="https://s22.postimg.cc/6bhp5swb5/addcard.png"></image></button>
+</view>
+</view>
+
+
+<!--名片数据列表不为空时aboutMe的页面-->
+<view class="bg" wx:else>
+  <view style="height: 25vh;width:100%;background-image:url('https://s22.postimg.cc/5nxagfk7l/back_img2.png')">
+    <button class="btn" bindtap='chooseimage'>
+      <image class="img" src="{{logoUrl}}" mode="aspecFill"></image>
+    </button>
+  </view>
+
+
+  <!-- <view class="header">我的名片</view> -->
+<view class="item-box">
+
+  <view class="items">
+
+    <view wx:for="{{cardList}}" wx:key="{{card_id}}" data-text="{{item.card_id}}" class="item">
+
+      <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" data-text="{{item.collect_id}}" style="{{item.txtStyle}}" class="inner txt">
+
+      <image class="item-icon" mode="widthFix" src="https://s7.postimg.cc/h5hv7j63b/card_Collect4.png"></image>
+      {{item.name + " (" + item.org + ")"}}
+      </view>
+
+      <view data-index="{{index}}" data-text="{{item.card_id}}" bindtap="deleteCard" class="inner del">删除</view>
+
+    </view>
+
+  </view>
+
+</view>
+
+</view>

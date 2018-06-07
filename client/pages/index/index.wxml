@@ -1,0 +1,42 @@
+<!--index.wxml-->
+
+<view class="bg1" bindtouchstart='touchStart' bindtouchend='touchEnd' wx:if="{{template_id==1}}">
+
+  <view class="divOut1">
+    <view class="divInter1">
+      <view class="nameStyle1" id="name" wx:if="{{person.name}}">{{person.name}}</view>
+      <view class="companyStyle1" wx:if="{{person.org}}">{{person.org}}</view>
+    </view>
+    <image style="width: 16vh; height: 16vh;margin-right:30rpx;padding-top:12vh;" src="{{imgUrl}}"></image>
+  </view>
+
+  <view class="positionStyle1" wx:if="{{person.title}}">{{person.title}}</view>
+  <view wx:if="{{person.mobile}}"><image style="width: 34rpx; height: 34rpx;margin-left:5%;padding-top:120rpx;" src="https://s17.postimg.cc/nvd88a6in/phone.png"></image><text class="phoneStyle1">{{person.mobile}}</text></view>
+  <view wx:if="{{person.tel}}"><image style="width: 17px; height: 17px;margin-left:5%" src="https://s17.postimg.cc/4q9yymmqn/fix_Phone.png"></image><text class="phoneStyle1">{{person.tel}}</text></view>
+  <view wx:if="{{person.email}}"><image style="width: 18px; height: 18px;margin-left:5%" src="https://s17.postimg.cc/n5ufw1o0f/mail.png"></image><text class="phoneStyle1">{{person.email}}</text></view>
+   <view wx:if="{{person.adr}}"><image style="width: 18px; height: 18px;margin-left:5%" src="https://s17.postimg.cc/kpsmhml73/gps.png"></image><text class="phoneStyle1">{{person.adr}}</text></view>
+   <view wx:if="{{person.url}}"><image style="width: 15px; height: 15px;margin-left:5%" src="https://s22.postimg.cc/q0h5fpje9/blog.png"></image><text class="phoneStyle1">{{person.url}}</text></view>
+</view>
+
+
+
+<view class="bg2" bindtouchstart='touchStart' bindtouchend='touchEnd' wx:elif="{{template_id==2}}">
+  <view class="nameStyle2" id="name" wx:if="{{person.name}}">{{person.name}}</view>
+  <view class="companyStyle2" wx:if="{{person.org}}">{{person.org}}</view>
+
+
+  <view class="divOut2">
+      <view class="divInter2">
+        <view class="positionStyle2" wx:if="{{person.title}}">{{person.title}}</view>
+      </view>
+      <image style="width: 14vh; height: 14vh;margin-left:15rpx;" src="{{imgUrl}}"></image>
+    </view>
+
+
+    <view wx:if="{{person.mobile}}"><image style="width: 34rpx; height: 34rpx;margin-left:5%;padding-top:115rpx;" src="https://s7.postimg.cc/6ly2pgvd3/phone2.1.png"></image><text class="phoneStyle2">{{person.mobile}}</text></view>
+    <view wx:if="{{person.tel}}"><image style="width: 17px; height: 17px;margin-left:5%" src="https://s7.postimg.cc/6ly2pg87r/fixphone2.1.png"></image><text class="phoneStyle2">{{person.tel}}</text></view>
+    <view wx:if="{{person.email}}"><image style="width: 18px; height: 18px;margin-left:5%" src="https://s7.postimg.cc/fgywzzcfr/mail2.1.png"></image><text class="phoneStyle2">{{person.email}}</text></view>
+    <view wx:if="{{person.adr}}"><image style="width: 18px; height: 18px;margin-left:5%" src="https://s7.postimg.cc/sl4hcnwrr/gps2.1.png"></image><text class="phoneStyle2">{{person.adr}}</text></view>
+      <view wx:if="{{person.url}}"><image style="width: 15px; height: 15px;margin-left:5%" src="https://s22.postimg.cc/dzvpf11pt/blog2.1.png"></image><text class="phoneStyle2">{{person.url}}</text></view>
+</view>
+<button class="save" bindtap='saveCard'>保存</button>

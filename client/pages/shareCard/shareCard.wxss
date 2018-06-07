@@ -1,0 +1,236 @@
+/**index.wxss**/
+
+.bg1{
+  background-image: url("https://s18.postimg.cc/ju1vmtdbt/card1.jpg");
+  background-size:cover;
+  background-attachment: scroll;
+  width: 80%; 
+  height: 85vh;
+  margin-left:10%;
+  border:gray 1px solid;
+  border-radius: 12px;
+}
+
+.divInter1{
+  width:60%;
+  height:30%;
+  display: inline-block;
+}
+
+.divOut1{
+  display: flex;
+  flex-direction: row;  
+}
+
+.nameStyle1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: black; 
+  margin-left:13%;
+  padding-top:12vh;
+  float:left;
+}
+
+.companyStyle1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-left:13%;
+  margin-top:3%;
+  color: black; 
+  float:left;
+}
+
+.positionStyle1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40rpx;
+  color: white; 
+  padding-top:270rpx;
+  text-align: center;
+  width: wrap-content;
+}
+
+.phoneStyle1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34rpx;
+  color: white; 
+  margin-left: 10rpx;
+}
+
+
+
+
+.bg2{
+  background-image: url("https://s31.postimg.cc/o5a9q097f/cartoon.png");
+  background-size:cover;
+  width: 80%; 
+  height: 85vh;
+  margin-left:10%;
+  border:gray 1px solid;
+  border-radius: 12px;
+}
+
+.divInter2{
+  width:60%;
+  height:20%;
+}
+
+.divOut2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 34rpx; 
+  margin-left: 7%; 
+}
+
+.nameStyle2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60rpx;
+  color: darkorange; 
+  margin-left:15%;
+  padding-top:100rpx;
+}
+
+.companyStyle2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26rpx;
+  margin-left:13%;
+  color: darkorange;
+}
+
+.positionStyle2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46rpx;
+  color: darkorange; 
+  margin-left: 15%;
+  margin-top: 60rpx;
+  width: wrap-content;
+}
+
+.phoneStyle2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34rpx;
+  color:  darkorange; 
+  margin-left: 10rpx;
+}
+
+/************************************************/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.card{
+  background-image: url("https://s18.postimg.cc/ju1vmtdbt/card1.jpg");
+  background-size:cover;
+  background-attachment: scroll;
+  width: 80%; 
+  height: 85vh;
+  margin-left:10%;
+  border:gray 1px solid;
+  border-radius: 12px;
+}
+
+.divInter{
+  width:60%;
+  height:30%;
+  display: inline-block;
+}
+
+.divOut{
+  display: flex;
+  flex-direction: row;  
+}
+
+.nameStyle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: black; 
+  margin-left:13%;
+  padding-top:12vh;
+  float:left;
+}
+
+.companyStyle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-left:13%;
+  margin-top:3%;
+  color: black; 
+  float:left;
+}
+
+.positionStyle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40rpx;
+  color: white; 
+  padding-top:270rpx;
+  text-align: center;
+  width: wrap-content;
+}
+
+.phoneStyle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34rpx;
+  color: white; 
+  margin-left: 10rpx;
+}
+
+
+.share_add{
+  box-sizing: border-box;
+  color:white;
+  background-color:#F4A460;
+  font-size: 30rpx;
+  width: 80%;
+  height: 90rpx;
+  margin-left: 10%;
+  margin-top: 20rpx;
+  padding-top: 8rpx;
+  border: 0.1rpx white solid;
+}
+
+
+
+.share_collect{
+  box-sizing: border-box;
+  color:white;
+  background-color:#F4A460;
+  font-size: 30rpx;
+  float: left;
+  margin-left: 10%;
+  width: 40%;
+  height: 90rpx;
+  padding-top: 8rpx;
+  border: 0.1rpx white solid; 
+  margin-bottom: 30rpx;
+}
+
+
+.share_aboutMe{
+  box-sizing: border-box;
+  color:white;
+  background-color:#F4A460;
+  font-size: 30rpx;
+  width: 40%;
+  height: 90rpx;
+  float: right;
+  margin-right: 10%;
+  padding-top: 8rpx;
+  border: 0.1rpx white solid; 
+  margin-bottom: 30rpx;
+}

@@ -1,0 +1,30 @@
+
+<!-- <view class="header">我的收藏</view> -->
+<view class="item-box" wx:if="{{hasCollect==true}}">
+
+  <view class="items">
+
+    <view wx:for="{{collectList}}" wx:key="{{item.collect_id}}" data-text="{{item.collect_id}}" class="item">
+
+     
+
+      <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" data-text="{{item.collect_id}}" style="{{item.txtStyle}}" class="inner txt">
+
+      <image class="item-icon" mode="widthFix" src="https://s7.postimg.cc/ikjfw9mlz/card_Collect5.png"></image>
+      {{item.name + " (" + item.org + ")"}}
+      </view>
+
+      <view data-index="{{index}}" data-text="{{item.collect_id}}" bindtap="deleteCollectCard" class="inner del">删除</view>
+
+    </view>
+
+  </view>
+
+</view>
+
+<view wx:else>
+<image class="no_collect_icon" src="https://s22.postimg.cc/rpwaygs7l/no_collect1.png"></image>
+<view  class="no_collect">
+  你还没有收藏任何名片！
+</view>
+</view>

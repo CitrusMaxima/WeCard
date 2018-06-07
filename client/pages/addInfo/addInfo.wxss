@@ -1,0 +1,66 @@
+.bg{
+  background-color: #F5F5F5;
+  height: 100vh;
+}
+
+.navi{
+  height: 25vh;
+  background-color: #00CC99;
+}
+
+
+
+.btn{
+  width: 170rpx;
+  height: 170rpx;
+  border: 0 solid #ff0000;
+  border-radius: 100rpx;
+  float:left;
+  margin-top:6vh;
+  margin-left: 284rpx;
+}
+
+
+.img{
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 100rpx;
+  margin-left: -28rpx;
+}
+
+
+.space{
+  margin-top: 3vh;
+}
+
+.info_item{
+  height: 5.5vh;
+  width: 100%;
+  background-color: white;
+  padding-left:20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 0rpx;
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;  
+}
+
+.text_item{
+  height: 4vh;
+  width: 70%;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-family: sans-serif;
+  font-size: 16px;
+  border-bottom: 1rpx gray solid; 
+}
+
+.btn_save{
+  height: 7vh;
+  width: 90%;
+  background-color: tomato;
+  color:white;
+  font-size:17px;
+  font-family: sans-serif;
+}

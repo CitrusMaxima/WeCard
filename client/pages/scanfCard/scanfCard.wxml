@@ -1,0 +1,39 @@
+<view class="bg">
+  <view class="takePhoto" bindtap="takePhoto"  wx:if="{{!imgFile.path}}">
+    <image style="height:11vw;width:12vw;margin-left:41.5vw" src="https://s7.postimg.cc/6pk4o6g1j/take_Photo.png"></image>
+    <button class="takePhotoBtn">立即拍照</button>
+  </view>
+  <view class="selectPhoto" bindtap="chooseImage"  wx:if="{{!imgFile.path}}">
+    <image style="height:8vw;width:12vw;margin-left:41.5vw" src="https://s7.postimg.cc/488dgwofb/select_Photo.png"></image>
+    <button class="takePhotoBtn">选择图库</button>
+  </view>
+
+<!-- 获取图片 -->
+  <view animation="{{animObtainImg}}" style="opacity:{{animScope.obtainImgInit ? 0 : 1 }}" class="obtain-img-container" wx:if="{{imgFile.path}}">
+    <view class="obtain-img-button" bindtap="reChooseImage">
+      <text class="obtain-img-button-text">获取图片</text>
+    </view>
+    <view class="img-container">
+      <image class="image" src="{{imgFile.path}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view>
+
+  <!-- 名片信息 -->
+  <view animation="{{animCardInfo}}" style="opacity:{{animScope.cardInfoInit ? 0 : 1 }}; transform:translateX({{animScope.cardInfoInit ? -800 : 0 }}px)" wx:if="{{cardInfo.success}}">
+    <text class="card-name-text" wx:if="cardInfo.name">姓名：{{cardInfo.name}}</text>
+    <text class="card-name-text" wx:for="{{cardInfo.company}}" wx:for-index="key" wx:for-item="value">公司：{{value}}</text>
+    <text class="card-name-text" wx:for="{{cardInfo.addr}}" wx:for-index="key" wx:for-item="value">地址：{{value}}</text>
+    <text class="card-name-text" wx:for="{{cardInfo.tel_cell}}" wx:for-index="key" wx:for-item="value">电话：{{value}}</text>
+    <text class="card-name-text" wx:for="{{cardInfo.tel_work}}" wx:for-index="key" wx:for-item="value">工作电话：{{value}}</text>
+    <text class="card-name-text" wx:for="{{cardInfo.title}}" wx:for-index="key" wx:for-item="value">职位：{{value}}</text>
+    <text class="card-name-text" wx:for="{{cardInfo.email}}" wx:for-index="key" wx:for-item="value">邮箱：{{value}}</text>
+    <text class="card-name-text" wx:for="{{cardInfo.department}}" wx:for-index="key" wx:for-item="value">部门：{{value}}</text>
+  </view>
+
+  <view animation="{{animCopy}}" style="opacity:{{animScope.copyInit ? 0 : 1 }};{{animScope.copyInit ? 'transform:translateX(800px)' : 'transform:translateX(0px)' }}" class='copy-container' wx:if="{{cardInfo}}">
+    <view hover-class='copy-button-hover' class='copy-button' bindtap="addToContacts">
+      <view class='copy-button-txt'>添加到联系人</view>
+    </view>
+  </view>
+
+</view>

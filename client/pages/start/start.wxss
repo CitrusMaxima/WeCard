@@ -1,0 +1,25 @@
+.bg{
+  background-color: white;
+  height: 100vh;
+}
+
+.text_start{
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-top: 10rpx;
+  margin-left:28%;
+  float:left;
+}
+
+.btn_start{
+  height: 7vh;
+  width: 90%;
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-top: 40rpx;
+  margin-left: 5%;
+  float: left;
+  background-color: tomato;
+  color:white;
+}
